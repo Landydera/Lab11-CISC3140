@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset = ' utf - 8'>
+<head>
+<link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+	
+</head>
+
+
+<body>
+
+	<h1 style="text-align:center;">Show Today's Date</h1>
+
+
+
+
+	<button>Show</button>
+	<h1 style="text-align: center;"></h1>
+
+
+
+	<script >
+
+		let showButton = document.querySelector('button');
+		let output = document.querySelector('h1');
+
+		
+	showButton.addEventListener('click', () => {
+
+		var today = new Date();
+
+		var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+		var time = today.getHours()+'-'+(today.getMinutes()+1)+'-'+today.getSeconds();
+
+		var dateTime = date+' '+time;
+
+		output.innerText = dateTime;
+
+
+	
+
+	});
+
+	</script>
+
+
+</body>
